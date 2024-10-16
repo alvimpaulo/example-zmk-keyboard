@@ -1,0 +1,19 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: nickconway
+      #Use branch smart-interrupt
+      url-base: https://github.com/nickconway
+    - name: caksoylar
+      #Use branch caksoylar/experimental
+      url-base: https://github.com/caksoylar
+    - name: ulmanyar
+      url-base: https://github.com/ulmanyar
+  projects:
+    - name: zmk
+      remote: caksoylar
+      revision: caksoylar/experimental
+      import: app/west.yml
+  self:
+    path: config
